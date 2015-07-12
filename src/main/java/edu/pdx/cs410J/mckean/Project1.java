@@ -2,7 +2,6 @@ package edu.pdx.cs410J.mckean;
 
 import edu.pdx.cs410J.AbstractPhoneBill;
 
-import java.util.regex.Pattern;
 
 /**
  * The main class for the CS410J Phone Bill Project
