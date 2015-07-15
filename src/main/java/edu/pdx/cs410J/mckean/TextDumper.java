@@ -3,7 +3,6 @@ package edu.pdx.cs410J.mckean;
 
 import edu.pdx.cs410J.AbstractPhoneBill;
 import edu.pdx.cs410J.PhoneBillDumper;
-
 import java.io.IOException;
 
 /**
@@ -12,6 +11,7 @@ import java.io.IOException;
 public class TextDumper implements PhoneBillDumper {
 
     public void dump(AbstractPhoneBill bill) throws IOException {
+
 
     }
 }

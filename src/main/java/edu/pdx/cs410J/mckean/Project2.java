@@ -34,8 +34,12 @@ public class Project2 {
 
         newPhoneBill.addPhoneCall(newPhoneCall);
 
-        System.out.println(newPhoneBill.toString());
-        System.out.println(newPhoneCall.toString());
+        if(arguments[2].equals("y")){
+            System.out.println(newPhoneBill.toString());
+            System.out.println(newPhoneCall.toString());
+            System.exit(0);
+        }
+
         System.exit(0);
     }
 
