@@ -21,10 +21,10 @@ public class PhoneCall extends AbstractPhoneCall {
     /**
      * Constructor that sets the data members of an individual phone call
      * based on what is read in from the command line.
-     * @param callee
-     * @param caller
-     * @param endTime
-     * @param startTime
+     * @param caller String that represents the person making the call
+     * @param callee String that represents the person receiving the call
+     * @param endTime String that represents the time the call ended
+     * @param startTime String that represents the time the call started
      */
     public PhoneCall(String caller, String callee, String startTime, String endTime) {
         this.Caller = caller;
@@ -34,8 +34,7 @@ public class PhoneCall extends AbstractPhoneCall {
     }
 
     /**
-     * Returns the phone number of the person who originated this phone
-     * call.
+     * @return Returns the phone number of the person who originated this phone call
      */
     @Override
     public String getCaller() {
@@ -43,8 +42,7 @@ public class PhoneCall extends AbstractPhoneCall {
     }
 
     /**
-     * Returns the phone number of the person who received this phone
-     * call.
+     * @return Returns the phone number of the person who received this phone call.
      */
     @Override
     public String getCallee() {
@@ -52,8 +50,7 @@ public class PhoneCall extends AbstractPhoneCall {
     }
 
     /**
-     * Returns a textual representation of the time that this phone call
-     * was originated.
+     * @return Returns a textual representation of the time that this phone call was originated.
      */
     @Override
     public String getStartTimeString() {
@@ -61,8 +58,7 @@ public class PhoneCall extends AbstractPhoneCall {
     }
 
     /**
-     * Returns a textual representation of the time that this phone call
-     * was completed.
+     * @return Returns a textual representation of the time that this phone call was completed.
      */
     @Override
     public String getEndTimeString() {

@@ -20,14 +20,14 @@ public class PhoneBill extends AbstractPhoneBill {
     /**
      * Constructor for the instantiation of a phone bill. Sets the customer name to the
      * name that is read in.
-     * @param customer
+     * @param customer String that represents the customers name for the phonebill. Reads it in as a string.
      */
     public PhoneBill(String customer) {
         this.Customer = customer;
     }
 
     /**
-     * Returns the name of the customer whose phone bill this is
+     * @return Returns the name of the customer whose phone bill this is
      */
     @Override
     public String getCustomer() {
@@ -37,7 +37,7 @@ public class PhoneBill extends AbstractPhoneBill {
     /**
      * Adds a phone call to this phone bill
      *
-     * @param call
+     * @param call An instance of an individual phone call. Adds the call to the phonebill for the given customer.
      */
     @Override
     public void addPhoneCall(AbstractPhoneCall call) {
@@ -45,7 +45,7 @@ public class PhoneBill extends AbstractPhoneBill {
     }
 
     /**
-     * Returns all of the phone calls (as instances of {@link
+     * @return Returns all of the phone calls (as instances of {@link
      * AbstractPhoneCall}) in this phone bill
      */
     @Override
