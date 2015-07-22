@@ -15,7 +15,7 @@ public class PhoneBill extends AbstractPhoneBill {
      * and a list that holds phone calls to represent the data contained in a real phone bill.
      */
     protected String Customer;
-    protected List<AbstractPhoneCall> PhoneCalls = new ArrayList<AbstractPhoneCall>();
+    public List<AbstractPhoneCall> PhoneCalls = new ArrayList<AbstractPhoneCall>();
 
     /**
      * Constructor for the instantiation of a phone bill. Sets the customer name to the
@@ -26,6 +26,10 @@ public class PhoneBill extends AbstractPhoneBill {
         this.Customer = customer;
     }
 
+    public PhoneBill(String customer, List phonecalls) {
+        this.Customer = customer;
+        this.PhoneCalls.addAll(phonecalls);
+    }
     /**
      * @return Returns the name of the customer whose phone bill this is
      */

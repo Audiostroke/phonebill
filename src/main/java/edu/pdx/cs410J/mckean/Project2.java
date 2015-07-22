@@ -295,7 +295,6 @@ public class Project2 {
          * This block of code runs if no options are present in the command line.
          */
         else {
-            System.out.println("no print no file");
             if (args.length < 7) {
                 System.err.println("Missing command line arguments.");
                 System.exit(1);

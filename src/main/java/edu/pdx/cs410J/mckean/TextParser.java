@@ -88,16 +88,12 @@ public class TextParser implements PhoneBillParser {
                     System.err.println("Callee phone number is in the incorrect form in the text file");
                     System.exit(1);
                 }
-                if(!newCall[2].matches("\\d{1,2}/\\d{1,2}/\\d{2,4} \\d{1,2}:\\d{2}")) {
+                if(!newCall[2].matches("\\d{1,2}/\\d{1,2}/\\d{2,4} (1[012]|[1-9]):[0-5][0-9] (?i)(am|pm)")) {
                     System.err.println("Start date and time is in the incorrect form in the text file");
                     System.exit(1);
                 }
-                if(!newCall[3].matches("\\d{1,2}/\\d{1,2}/\\d{2,4} \\d{1,2}:\\d{2}")) {
+                if(!newCall[3].matches("\\d{1,2}/\\d{1,2}/\\d{2,4} (1[012]|[1-9]):[0-5][0-9] (?i)(am|pm)")) {
                     System.err.println("End date or time is in the incorrect form in the text file");
-                    System.exit(1);
-                }
-                if(newCall[2].compareTo(newCall[3]) > 0) {
-                    System.err.println("The start date entered is after the end date in the text file");
                     System.exit(1);
                 }
                 PhoneCall inputPhoneCall = new PhoneCall(newCall[0], newCall[1], newCall[2], newCall[3]);
