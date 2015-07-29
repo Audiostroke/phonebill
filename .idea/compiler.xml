@@ -24,9 +24,17 @@
         <processorPath useClasspath="true" />
         <module name="phonebill" />
       </profile>
+      <profile default="false" name="Annotation profile for phonebillbeta" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="phonebillbeta" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="phonebill" target="1.8" />
+      <module name="phonebillbeta" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
